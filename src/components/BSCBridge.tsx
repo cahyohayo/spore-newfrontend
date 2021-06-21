@@ -150,7 +150,7 @@ const BSCBridge = () => {
             script.src = "/bscbridge.js";
             script.async = true;
             document.body.appendChild(script);
-            connectMetaMask();
+            // connectMetaMask();
             var numberOfSporeAVAX = await getSporeInWalletAVAX() / 10 ** 9;
             var numberOfSporeBSC = await getSporeInWalletBSC() / 10 ** 9;
             var nid = await getNetworkId();
@@ -203,7 +203,7 @@ const BSCBridge = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="arrow"><a className="btn btn-outline-light inverted" id="btn-arrow"><i className="fa fa-arrow-right"></i></a></div>
+                            <div className="arrow"><span className="btn btn-outline-light inverted" id="btn-arrow"><i className="fa fa-arrow-right"></i></span></div>
                             <div className="col-lg-6 col-coin pl-lg-0" id="reverted-2">
                                 <div className="card px-lg-5 rounded-0 h-100 binance">
                                     <div className="card-body">

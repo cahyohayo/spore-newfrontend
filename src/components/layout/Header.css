@@ -118,6 +118,9 @@ font-size: 25px;
   color:white !important;
   font-size: 25px;
   padding-right: 20px;
+  background: none;
+  outline: none;
+  border: none;
 }
 
 .modal-footer .btn.btn-primary.claimair.m-air {

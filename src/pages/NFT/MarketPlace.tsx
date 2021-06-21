@@ -57,7 +57,7 @@ export const MarketPlaceView = (props: Props) => {
                         {/* <img className="rounded shadow" src={item[2].image} height="200" /> */}
                         <div className="card" style={{ width: '100%' }}>
                             <div className="likenft">
-                                <a title="Love it" type="button" className="btn btn-counter multiple-count" data-count="0"><span>&#x2764;</span></a>
+                                <span title="Love it" className="btn btn-counter multiple-count" data-count="0"><span>&#x2764;</span></span>
                             </div>
                             <div className="image-card-slider">
                                 <img src={findimage(item.itemId)} className="card-img-top" alt="marketplace" />

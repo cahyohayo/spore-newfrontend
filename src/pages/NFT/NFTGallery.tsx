@@ -22,7 +22,7 @@ const NFTGallery = (props: any) => {
             // <Carousel.Item>
             <div className="card text-center" key={data.id}>
               <div className="likenft">
-                <a title="Love it" className="btn btn-counter multiple-count" data-count="0"><span>&#x2764;</span></a>
+                <span title="Love it" className="btn btn-counter multiple-count" data-count="0"><span>&#x2764;</span></span>
               </div>
               <div className="image-card-slider">
                 <img src={data.external_url} className="card-img-top" alt="Reload your page" />

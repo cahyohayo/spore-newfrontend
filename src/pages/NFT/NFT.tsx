@@ -1,7 +1,7 @@
 //import React, { useCallback } from "react";
 import Web3 from "web3";
-import InstallMetamask from "../InstallMetamask";
-import UnlockMetamask from "../UnlockMetamask";
+import InstallMetamask from '../../components/InstallMetamask'
+import UnlockMetamask from "../../components/UnlockMetamask"
 import ReturnTokenURI from "./ReturnTokenURI";
 import './NFT.css';
 import { AVAX_SPORE_ABI, SPORE_MARKET_ABI } from '../../utils/SporeAbis';
@@ -175,9 +175,9 @@ const NFT = (props: any) => {
                   <div className="accordion" id="accordionExample">
                     <div className="accordion-item">
                       <h2 className="accordion-header" id="headingOne">
-                        <a className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <span className="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                           Objective
-                        </a>
+                        </span>
                       </h2>
                       <div id="collapseOne" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div className="accordion-body">

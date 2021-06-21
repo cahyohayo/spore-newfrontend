@@ -1,9 +1,7 @@
-// src/Header.js
 import './Header.css';
 
 import React from 'react';
 import Web3 from 'web3';
-import { Link } from 'react-router-dom';
 
 const win = window as any
 const connectMetaMask = () => {
@@ -166,8 +164,6 @@ const claimAirdrop = async (e: any) => {
   }
 }
 
-
-
 const Header = () => {
   return (
 
@@ -177,9 +173,9 @@ const Header = () => {
           <a className="navbar-brand" href="/">
             <img src="spore_128.png" alt="" width="175" height="50" className="d-inline-block align-text-top"></img>
           </a>
-          <a className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+          <span className="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
             <i className="fa fa-bars"></i>
-          </a>
+          </span>
           <ul className="nav justify-content-end collapse navbar-collapse" id="navbarNavAltMarkup">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="/">Home</a>
@@ -189,14 +185,14 @@ const Header = () => {
             </li>
 
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Buy Now</a>
+              <span className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Buy Now</span>
               <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x33a3d962955a3862c8093d1273344719f03ca17c" target="_blank">Buy On BSC</a></li>
-                <li><a className="dropdown-item" href="https://app.pangolin.exchange/#/swap?inputCurrency=0x6e7f5c0b9f4432716bdd0a77a3601291b9d9e985" target="_blank">Buy On Avalanche</a></li>
+                <li><a className="dropdown-item" href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x33a3d962955a3862c8093d1273344719f03ca17c" target="_blank" rel="noreferrer">Buy On BSC</a></li>
+                <li><a className="dropdown-item" href="https://app.pangolin.exchange/#/swap?inputCurrency=0x6e7f5c0b9f4432716bdd0a77a3601291b9d9e985" target="_blank" rel="noreferrer">Buy On Avalanche</a></li>
               </ul>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">NFTs</a>
+              <span className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">NFTs</span>
               <ul className="dropdown-menu">
                 <li><a className="dropdown-item" href="/nft" >Market</a></li>
                 <li><a className="dropdown-item" href="/gallery" >Gallery</a></li>
@@ -204,23 +200,20 @@ const Header = () => {
               </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="Spore_community_Whitepaper.pdf">Whitepaper</a>
+              <a className="nav-link" href="#roadmaps">Roadmap</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#roadmaps">The Roadmaps</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#ourteam">Our Team</a>
+              <a className="nav-link" href="/team">Meet Team</a>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Docs</a>
+              <span className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Docs</span>
               <ul className="dropdown-menu">
                 <li><a className="dropdown-item" href="./pdf/how-to-buy.pdf" target="_blank">How to Buy ( PDF )</a></li>
-                <li><a className="dropdown-item" href="https://www.youtube.com/watch?v=wK4vvE44Pfw" target="_blank">How to Buy ( Video )</a></li>
+                <li><a className="dropdown-item" href="https://www.youtube.com/watch?v=wK4vvE44Pfw" target="_blank" rel="noreferrer">How to Buy ( Video )</a></li>
               </ul>
             </li>
             <li className="nav-item">
-              <a type="button" className="btn btn-primary claimair" onClick={claimAirdrop}><b>Claim Airdrop</b></a>
+              <span className="btn btn-primary claimair" onClick={claimAirdrop}><b>Claim Airdrop</b></span>
             </li>
 
           </ul>
@@ -233,7 +226,7 @@ const Header = () => {
           <a className="navbar-brand" href="/">
             <img src="spore_128.png" alt="" width="175" height="50" className="d-inline-block align-text-top"></img>
           </a>
-          <a type="button" className="text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i className="fa fa-times"></i></a>
+          <span className="text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i className="fa fa-times"></i></span>
         </div>
         <div className="offcanvas-body">
           <ul className="nav flex-column">
@@ -245,14 +238,14 @@ const Header = () => {
             </li>
 
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Buy Now</a>
+              <span className="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Buy Now</span>
               <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x33a3d962955a3862c8093d1273344719f03ca17c" target="_blank">Buy On BSC</a></li>
-                <li><a className="dropdown-item" href="https://app.pangolin.exchange/#/swap?inputCurrency=0x6e7f5c0b9f4432716bdd0a77a3601291b9d9e985" target="_blank">Buy On Avalanche</a></li>
+                <li><a className="dropdown-item" href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x33a3d962955a3862c8093d1273344719f03ca17c" target="_blank" rel="noreferrer">Buy On BSC</a></li>
+                <li><a className="dropdown-item" href="https://app.pangolin.exchange/#/swap?inputCurrency=0x6e7f5c0b9f4432716bdd0a77a3601291b9d9e985" target="_blank" rel="noreferrer">Buy On Avalanche</a></li>
               </ul>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">NFTs</a>
+              <span className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">NFTs</span>
               <ul className="dropdown-menu">
                 <li><a className="dropdown-item" href="/nft">Market</a></li>
                 <li><a className="dropdown-item" href="/gallery">Gallery</a></li>
@@ -263,150 +256,28 @@ const Header = () => {
               <a className="nav-link" href="Spore_community_Whitepaper.pdf">Whitepaper</a>
             </li>
             <li className="nav-item">
-              <a type="button" className="nav-link" href="#roadmaps" data-bs-dismiss="offcanvas" aria-label="Close">The Roadmaps</a>
+              <a className="nav-link" href="#roadmaps" data-bs-dismiss="offcanvas" aria-label="Close">Roadmap</a>
             </li>
             <li className="nav-item">
-              <a type="button" className="nav-link" href="#ourteam" data-bs-dismiss="offcanvas" aria-label="Close">Our Team</a>
+              <a className="nav-link" href="/team" data-bs-dismiss="offcanvas" aria-label="Close">Meet Team</a>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Docs</a>
+              <span className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Docs</span>
               <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="./pdf/how-to-buy.pdf" target="_blank">How to Buy ( PDF )</a></li>
-                <li><a className="dropdown-item" href="https://www.youtube.com/watch?v=wK4vvE44Pfw" target="_blank">How to Buy ( Video )</a></li>
+                <li><a className="dropdown-item" href="./pdf/how-to-buy.pdf" target="_blank" rel="noreferrer">How to Buy ( PDF )</a></li>
+                <li><a className="dropdown-item" href="https://www.youtube.com/watch?v=wK4vvE44Pfw" target="_blank" rel="noreferrer">How to Buy ( Video )</a></li>
               </ul>
             </li>
             <li className="nav-item">
-              <a type="button" className="btn btn-primary claimair" onClick={claimAirdrop}><b>Claim Airdrop</b></a>
+              <span className="btn btn-primary claimair" onClick={claimAirdrop}><b>Claim Airdrop</b></span>
             </li>
 
           </ul>
         </div>
       </div>
-
-
-      {/* <nav className='navbar navbar-expand-lg py-3'>
-        <div className='container-fluid'>
-          <a href='/' className='navbar-brand'>
-            <img src='spore_128.png' className='logo' alt='Spore' />{' '}
-            <h1 className='font-weight-bold d-inline'>Spore</h1>
-          </a>
-          <button
-            type='button'
-            data-toggle='collapse'
-            data-target='#navbarSupportedContent'
-            aria-controls='navbarSupportedContent'
-            aria-expanded='false'
-            aria-label='Toggle navigation'
-            className='navbar-toggler navbar-toggler-right'>
-            <i className='fa fa-bars'></i>
-          </button>
-          <div id='navbarSupportedContent' className='collapse navbar-collapse'>
-            <ul className='navbar-nav ml-auto'>
-              
-               <li className="dropdown nav-item">
-                <a href="/#" className="dropdown-toggle nav-link font-weight-bold" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                  Buy SPORE<span className="caret"></span>
-                </a>
-                <ul className="dropdown-menu">
-                  <li>
-                  <a href='https://app.pangolin.exchange/#/swap?inputCurrency=0x6e7f5c0b9f4432716bdd0a77a3601291b9d9e985' target='_blank' rel="noreferrer" style={{textDecoration:'none'}}>
-                    <span className='nav-link'>Avalanche <img height="30px" width="30px" src='avalanche-logo.png' alt='Avalanche Network' className="imagenespeciada"></img></span>
-                  </a>
-                  </li>
-                  <li>
-                  <a href='https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x33a3d962955a3862c8093d1273344719f03ca17c' target='_blank' rel="noreferrer" style={{textDecoration:'none'}}>
-                    <span className='nav-link'>Binance Smart Chain <img height="30px" width="30px" src='binance-logo.png' alt="Binance Smart Chain" className="imagenespeciada"></img></span>
-                  </a>
-                  </li>
-                </ul>
-              </li> 
-              
-              <li className='nav-item'>
-                <Link to='/bridge' style={{ textDecoration: 'none' }}>
-                  <span className='nav-link font-weight-bold' title='Spore Avalanche-BSC Bridge'>Bridge</span>
-                </Link>
-              </li>
-
-              <li className="dropdown nav-item">
-                <a href="/#" className="dropdown-toggle nav-link font-weight-bold" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NFT<span className="caret"></span>
-                </a>
-                <ul className="dropdown-menu">
-                  <li>
-                  <Link to='/nft' style={{ textDecoration: 'none' }}>
-                    <span className='nav-link'>Market</span>
-                  </Link>
-                  </li>
-                  <li>
-                  <Link to='/gallery' style={{ textDecoration: 'none' }}>
-                    <span className='nav-link'>Gallery</span>
-                  </Link>
-                  </li>
-                  <li>
-                  <Link to='/coming-soon' style={{ textDecoration: 'none' }}>
-                    <span className='nav-link'>Giveaway</span>
-                  </Link>
-                  </li>
-                </ul>
-               </li>
-                  
-              <li className="dropdown nav-item">
-                <a href="/#"
-                  className="dropdown-toggle nav-link font-weight-bold" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                  Charts <span className="caret"></span>
-                </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <a href='https://info.pangolin.exchange/#/token/0x6e7f5c0b9f4432716bdd0a77a3601291b9d9e985' target='_blank' rel='noopener noreferrer'>
-                      Pangolin (AVAX)
-                    </a>
-                  </li>
-                  <li>
-                    <a href='https://charts.bogged.finance/?token=0x33A3d962955A3862C8093D1273344719f03cA17C' target='_blank' rel='noopener noreferrer'>
-                      Bogged (BSC)
-                    </a>
-                  </li>
-                  <li>
-                    <a href='https://dex.guru/token/0x33a3d962955a3862c8093d1273344719f03ca17c-bsc' target='_blank' rel='noopener noreferrer'>
-                      DexGuru (BSC)
-                    </a>
-                  </li>
-                </ul>
-              </li>
-                  
-                <li className="dropdown nav-item">
-                <a href="/#" className="dropdown-toggle nav-link font-weight-bold" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Docs<span className="caret"></span>
-                </a>
-                <ul className="dropdown-menu">
-                  <li>
-                  <Link to='./pdf/how-to-buy.pdf' target='_blank' rel="noreferrer">
-                    <span className='nav-link'>How to buy (PDF)</span>
-                  </Link>
-                  </li>
-                  <li>
-                  <a href='https://www.youtube.com/watch?v=wK4vvE44Pfw' target='_blank' rel="noreferrer">
-                    <span className='nav-link'>How to buy (video)</span>
-                  </a>
-                  </li>
-                </ul>
-              </li>
-
-              <li className='nav-item'>
-                <button
-                  className='btn btn-outline-light'
-                  onClick={claimAirdrop}
-                >
-                  Claim Airdrop
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav> */}
     </header>
   )
 }
-
-
 
 export default Header
 
